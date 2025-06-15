@@ -97,6 +97,10 @@ main {
   header {
     flex-direction: column;
     align-items: flex-start;
+      .header-controls {
+    width: 100%;
+    justify-content: flex-end;
+    }
   }
 
   #menuToggle {
@@ -120,4 +124,10 @@ main {
 
 html {
   scroll-behavior: smooth;
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.5rem;       /* space between buttons */
+  align-items: center;
 }
