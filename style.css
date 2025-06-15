@@ -131,3 +131,28 @@ html {
   gap: 0.5rem;       /* space between buttons */
   align-items: center;
 }
+
+/* Portrait phones only */
+@media only screen
+  and (max-width: 600px)
+  and (orientation: portrait) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-controls {
+    /* make the control bar span full width */
+    width: 100%;
+    /* keep buttons in a row */
+    display: flex;
+    gap: 0.5rem;
+    /* push them all the way to the right */
+    justify-content: flex-end;
+    /* optional: if you want the controls themselves to sit at the right edge 
+       of the header’s column, use align-self */
+    align-self: flex-end;
+  }
+}
