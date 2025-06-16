@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skull's Site</title>
+
+  <!-- Basic Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Apple Touch Icon for iOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Skull's Site!</h1>
+    <div class="header-controls">
+    <!-- Theme Toggle -->
+    <button id="themeToggle">
+      <span id="themeIconWrapper" aria-hidden="true"></span>
+      <span id="themeLabel">Light</span>
+    </button>
+
+    <!-- Menu Control -->
+    <button id="menuToggle">
+  <span id="menuIconWrapper" aria-hidden="true"></span>
+  <span>Menu</span>
+  </button>
+  </div>
+  </header>
+
+ <nav id="menu">
+  <ul>
+    <li><a href="#about"><i data-feather="user"></i> About Me</a></li>
+    <li><a href="#projects"><i data-feather="code"></i> Projects</a></li>
+    <li><a href="#contact"><i data-feather="mail"></i> Contact</a></li>
+  </ul>
+</nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! i'm Skull! I do a lot of coding, and find it fun. I coded this website using HTML/CSS/JS and it wasn't that hard. I, of course, had help from ChatGPT, but it just walked through how to do it. That's about all I have to say, so bye!!</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+<section id="bot-cards">
+  <div class="cards-grid">
+    <!-- Card #1 -->
+    <div class="card"
+        data-modal-image="images/skulls-bot.png"
+        data-modal-title="Skull's Bot"
+        data-modal-desc="This is a bot I made that has links to my socials. I am working on adding more to it."
+        data-modal-link="https://discord.com/oauth2/authorize?client_id=1363907188493652229">
+     <img src="images/discord.png" alt="Discord Logo" class="card-icon">
+      <h3 class="card-title">Skull's Bot</h3>
+      <p class="card-desc">
+        This is my very first bot. I have more like this, but too much to show here.
+      </p>
+    </div>
+
+    <!-- Card #2 -->
+    <div class="card"
+        data-modal-image="images/skulls-site.png"
+        data-modal-title="Skull's Site"
+        data-modal-desc="This is the website you are on, its just something I made to explain who I am, and what I do."
+        data-modal-link="https://skullfromroblox3.github.io">
+      <img src="images/discord.png" alt="Discord Logo" class="card-icon">
+      <h3 class="card-title">Skull's Site</h3>
+      <p class="card-desc">
+        The site you're on. It's my website that I made.
+      </p>
+    </div>
+
+        <!-- Card #3 -->
+    <div class="card"
+        data-modal-image="images/skull-and-kossys-server.png"
+        data-modal-title="Skull and Kossy's Server"
+        data-modal-desc="By clicking the picture, you can be invited to mine and Kossy's server."
+        data-modal-link="https://discord.gg/WpgJTQezZu">
+      <img src="images/discord.png" alt="Discord Logo" class="card-icon">
+      <h3 class="card-title">Skull and Kossy's Server</h3>
+      <p class="card-desc">
+        Click this to see how to join the server
+      </p>
+    </div>
+
+</section>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+<div class="contact-links">
+  <a href="mailto:skullfromroblox@gmail.com" class="btn"><i data-feather="mail"></i>Email</a>
+  <a href="https://github.com/skullfromroblox3" target="_blank" rel="noopener" class="btn"><i data-feather="github"></i>GitHub</a>
+  <a href="https://twitch.tv/skullfromroblox" target="_blank" rel="noopener" class="btn"><i data-feather="twitch"></i>Twitch</a>
+  <a href="https://guns.lol/skullfromroblox" target="_blank" rel="noopener" class="btn"><i data-feather="external-link"></i>My Other Socials</a>
+</div>
+    </section>
+</main>
+<!-- Modal Overlay -->
+<div id="cardModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modalClose">&times;</span>
+    <a id="modalLink" href="#" target="_blank" rel="noopener">
+    <img id="modalImage" alt="" />
+    </a>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+</body>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="script.js"></script>
